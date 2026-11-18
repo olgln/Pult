@@ -1,0 +1,28 @@
+/* Global styles: colours, system font stack, full-window layout. */
+:root {
+  color-scheme: dark;
+  --bg: #141a24;
+  --panel: #1b2433;
+  --line: #2a3547;
+  --text: #d8dee9;
+  --muted: #7d8a9e;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  color: var(--text);
+  background: var(--bg);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}

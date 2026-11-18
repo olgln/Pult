@@ -1,0 +1,18 @@
+[workspace]
+resolver = "3"
+members = ["crates/core", "crates/cli", "src-tauri"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+authors = ["Pult contributors"]
+publish = false
+
+[workspace.dependencies]
+pult-core = { path = "crates/core" }
+serde = { version = "=1.0.229", features = ["derive"] }
+serde_json = "=1.0.154"
+
+[workspace.lints.clippy]
+all = { level = "warn", priority = -1 }
